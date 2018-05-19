@@ -2,5 +2,5 @@ pipeline:
   build-and-push:
     image: plugins/docker
     repo: phpdrone/phpdoc
-    autotag: true
+    auto_tag: true
     secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
