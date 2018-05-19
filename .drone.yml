@@ -2,9 +2,5 @@ pipeline:
   build-and-push:
     image: plugins/docker
     repo: phpdrone/phpdoc
-    tags:
-      - latest
+    autotag: true
     secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
-    when:
-      event: push
-      branch: master 
