@@ -3,6 +3,6 @@ pipeline:
     image: plugins/docker
     repo: phpdrone/phpdoc
     build_args:
-      - PHPDOC_VERSION=${DRONE_TAG}
+      - PHPDOC_VERSION=${DRONE_TAG=~2}
     auto_tag: true
     secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
